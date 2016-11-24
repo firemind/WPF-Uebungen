@@ -22,17 +22,9 @@
     <DockPanel>
         
         <!-- Title and subtitle -->
-        
-        <DockPanel DockPanel.Dock="Top" Height="96" Name="TitleContainerPanel">
-            
-            <DockPanel.Background>
-                <LinearGradientBrush StartPoint="0, 0" EndPoint="0, 1" Opacity=".1">
-                    <GradientStop Offset="0" Color="#1ba1e2" />
-                    <GradientStop Offset=".3" Color="#1ba1e2" />
-                    <GradientStop Offset="1" Color="Transparent" />
-                </LinearGradientBrush>
-            </DockPanel.Background>
-            
+
+        <DockPanel DockPanel.Dock="Top" Height="96" Name="TitleContainerPanel"  Style="{StaticResource MyDockPanelStyle}">
+
             <!-- must set background to non-null value (transparent) or mouse events are not caught in the entire client area: -->
             <DockPanel DockPanel.Dock="Top" Height="32" Name="TitlePanel" Background="Transparent"  MouseLeftButtonDown="TitlePanel_OnMouseLeftButtonDown" MouseDown="TitlePanel_OnMouseDown">
                 <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">

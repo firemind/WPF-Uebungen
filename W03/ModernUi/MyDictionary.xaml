@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ModernUi">
+    <Style x:Key="MyDockPanelStyle">
+        <Setter Property="DockPanel.Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity=".1">
+                    <GradientStop Offset="0" Color="#1ba1e2" />
+                    <GradientStop Offset=".3" Color="#1ba1e2" />
+                    <GradientStop Offset="1" Color="Transparent" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
